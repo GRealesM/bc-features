@@ -1,0 +1,10 @@
+This code is meant to compute the ellipses around clustered IMDs and allocate biomarkers to the different clusters.
+
+* biomarkers-to-nearest-cluster.R - Chris' code. First version.
+* biomarkers-to-nearest-cluster-guille.R - Guille's revision.
+* ellipse-tangents.R - Helper functions to compute ellipses.
+
+
+Guillermo Reales
+
+2022-11-25

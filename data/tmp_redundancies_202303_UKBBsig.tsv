@@ -1,0 +1,133 @@
+Trait	stars.PC2	stars.PC5	stars.PC8	Trait_long	Trait_class	N0	N1	N	Year	Population
+20002_1065_PanUKBB_PanUKBBR2_1	""	""	●	Hypertension (UKBB)	OTH	325698	115530	441228	2022	Trans-ethnic (CSA,EUR)
+20002_1111_PanUKBB_PanUKBBR2_1	●	●	●	Asthma (UKBB)	IMD	389965	51263	441228	2022	Trans-ethnic (AFR,CSA,EUR)
+20002_1226_PanUKBB_PanUKBBR2_1	""	●	●	Hypothyroidism/Myxoedema (UKBB)	IMD	414705	21241	435946	2022	Trans-ethnic (CSA,EUR)
+20002_1374_PanUKBB_PanUKBBR2_1	""	●	""	Allergy/Hypersensitivity/Anaphylaxis (UKBB)	IMD	417480	2993	420473	2022	European (EUR)
+20002_1387_PanUKBB_PanUKBBR2_1	●	●	●	Hayfever/Allergic Rhinitis (UKBB)	IMD	416137	25091	441228	2022	Trans-ethnic (AFR,AMR,CSA,EAS,EUR,MID)
+20002_1417_PanUKBB_PanUKBBR2_1	""	●	○	Nasal Polyps (UKBB)	IMD	418630	1843	420473	2022	European (EUR)
+20002_1466_PanUKBB_PanUKBBR2_1	○	""	●	Gout (UKBB)	IMD	423213	6109	429322	2022	Trans-ethnic (CSA,EUR)
+20002_1473_PanUKBB_PanUKBBR2_1	""	""	●	High Cholesterol (UKBB)	OTH	386547	54681	441228	2022	Trans-ethnic (AFR,AMR,CSA,EAS,EUR,MID)
+AITD_Saevarsdottir_32581359_1	○	●	●	Autoimmune Thyroid disease	IMD	725172	30234	755406	2020	European (Iceland + UK)
+ALAAT_SinnottArmstrong_33462484_1	●	""	●	Alanine aminotransferase levels	BMK	363054	0	363054	2021	Trans-ethnic
+ALB_SinnottArmstrong_33462484_1	""	●	""	Albumin levels	BMK	331979	0	331979	2021	Trans-ethnic
+ALCPHOS_SinnottArmstrong_33462484_1	●	●	●	Alkaline phosphatase levels	BMK	363228	0	363228	2021	Trans-ethnic
+APOA_SinnottArmstrong_33462484_1	""	""	●	Apolipoprotein A levels	BMK	330515	0	330515	2021	Trans-ethnic
+APOB_SinnottArmstrong_33462484_1	""	●	●	Apolipoprotein B levels	BMK	361372	0	361372	2021	Trans-ethnic
+ASPAT_SinnottArmstrong_33462484_1	●	""	●	Aspartate aminotransferase levels	BMK	361854	0	361854	2021	Trans-ethnic
+ASTAO_Ferreira_30929738_1	""	●	●	Adult-onset Asthma	IMD	300671	26582	327253	2019	European
+ASTCO_Ferreira_30929738_1	●	●	●	Childhood-onset Asthma	IMD	300671	13962	314633	2019	European
+ASTER_Ferreira_29083406_1	""	●	●	Asthma and/or Eczema and/or Rhinitis	IMD	34934	83335	118269	2017	European
+AST_Demenais_29273806_1	○	●	""	Asthma	IMD	107715	19954	127669	2018	European
+AST_Demenais_29273806_2	●	●	○	Asthma	IMD	118538	23948	142486	2018	Trans-ethnic (European + Asian + African + Hispanic/Latin American)
+AST_Moffatt_20860503_1	""	●	○	Asthma	IMD	16110	10365	26475	2010	European
+BILD_SinnottArmstrong_33462484_1	●	●	●	Direct bilirubin levels	BMK	308695	0	308695	2021	Trans-ethnic
+BIL_SinnottArmstrong_33462484_1	●	""	●	Total Bilirubin levels	BMK	361681	0	361681	2021	Trans-ethnic
+CALC_SinnottArmstrong_33462484_1	""	●	●	Calcium levels	BMK	332355	0	332355	2021	Trans-ethnic
+CD40L_Folkersen_33067605_1	""	""	●	CD40 ligand (CD154) levels	BMK	21758	0	21758	2020	European
+CD_DeLange_28067908_1	●	○	●	Crohn's Disease	IMD	28072	12194	40266	2017	European
+CD_Liu_26192919_1	●	""	●	Crohn's Disease	IMD	14957	5956	20913	2015	European
+CEL_Dubois_20190752_1	""	●	""	Celiac Disease	IMD	10750	4533	15283	2010	European
+CHOL_SinnottArmstrong_33462484_1	""	●	""	Cholesterol levels	BMK	363194	0	363194	2021	Trans-ethnic
+CREAP_SinnottArmstrong_33462484_1	●	""	●	C-reactive protein levels	BMK	362443	0	362443	2021	Trans-ethnic
+CREAT_SinnottArmstrong_33462484_1	""	○	●	Creatinine levels	BMK	363070	0	363070	2021	Trans-ethnic
+CSTC_SinnottArmstrong_33462484_1	○	●	●	Cystatin C levels	BMK	363090	0	363090	2021	Trans-ethnic
+CTSD_Folkersen_33067605_1	""	""	●	Cathepsin D levels	BMK	21758	0	21758	2020	European
+CX3CL1_Folkersen_33067605_1	○	""	●	Fractalkine, chemokine (C-X3-C motif) ligand 1 (CX3CL1) levels	BMK	21758	0	21758	2020	European
+DKK1_Folkersen_33067605_1	""	""	●	Dickkopf-related protein 1 levels	BMK	21758	0	21758	2020	European
+ECP_Folkersen_33067605_1	""	●	●	Eosinophil cationic protein levels	BMK	21758	0	21758	2020	European
+EGFR_SinnottArmstrong_33462484_1	""	○	●	Estimated Glomerular Filtration Rate (eGFR) levels	BMK	363070	0	363070	2021	Trans-ethnic
+EGPAANCAn_Lyons_31719529_1	""	●	""	ANCA negative EGPA	IMD	6688	352	7040	2019	European
+EGPA_Lyons_31719529_1	""	●	○	Eosinophilic Granulomatosis with Polyangiitis	IMD	6688	534	7222	2019	European
+ENRAGE_Folkersen_33067605_1	●	""	""	S100 calcium-binding protein A12 (S100A12, ENRAGE) levels	BMK	21758	0	21758	2020	European
+GGT_SinnottArmstrong_33462484_1	""	●	●	γ-glutamyl transpeptidase levels	BMK	363026	0	363026	2021	Trans-ethnic
+GLU_SinnottArmstrong_33462484_1	●	""	●	Glucose levels	BMK	332079	0	332079	2021	Trans-ethnic
+HBA1C_SinnottArmstrong_33462484_1	○	""	●	Glycated Hemoglobin (HbA1c) levels	BMK	345814	0	345814	2021	Trans-ethnic
+HBEGF_Folkersen_33067605_1	""	""	●	Proheparin-binding EGF-like growth factor (HB-EGF) levels	BMK	21758	0	21758	2020	European
+HDL_SinnottArmstrong_33462484_1	●	""	●	HDL cholesterol levels	BMK	332323	0	332323	2021	Trans-ethnic
+HGF_Folkersen_33067605_1	""	""	●	Hepatocyte growth factor (HGF, SF) levels	BMK	21758	0	21758	2020	European
+HGF_Reales_up_1	""	""	●	Hepatocyte growth factor (HGF, SF) levels	BMK	9216	0	9216	2020	European (Finnish + Swedish)
+IBD_DeLange_28067908_1	●	●	●	Inflammatory Bowel Disease	IMD	34915	25042	59957	2017	European
+IBD_Liu_26192919_1	●	○	○	Inflammatory Bowel Disease	IMD	21770	12882	34652	2015	European
+IGAD_Bronson_27723758_1	""	●	""	IgA deficiency	IMD	4852	1635	6487	2016	European
+IGF1_SinnottArmstrong_33462484_1	●	""	●	Insulin-like growth factor 1 (IGF-1) levels	BMK	361107	0	361107	2021	Trans-ethnic
+IL16_Folkersen_33067605_1	""	""	●	Interleukin-16 (IL16) levels	BMK	21758	0	21758	2020	European
+IL18_Folkersen_33067605_1	""	""	●	Interleukin-18 (IL18) levels	BMK	21758	0	21758	2020	European
+IL1RA_Folkersen_33067605_1	●	""	""	Interleukin-1 receptor antagonist (IL1ra) levels	BMK	21758	0	21758	2020	European
+IL27_Folkersen_33067605_1	""	""	●	Interleukin-27 levels	BMK	21758	0	21758	2020	European
+IL6RA_Folkersen_33067605_1	""	""	●	Interleukin-6 receptor A subunit (IL6RA) levels	BMK	21758	0	21758	2020	European
+IL8_Folkersen_33067605_1	●	""	""	Interleukin-8 (IL8, CXCL8)  levels	BMK	21758	0	21758	2020	European
+JIA_LopezIsac_33106285_1	""	●	""	Juvenile Idiopathic Arthritis	IMD	9196	3305	12501	2021	European (UK)
+LDLD_SinnottArmstrong_33462484_1	""	●	●	LDL cholesterol levels	BMK	362516	0	362516	2021	Trans-ethnic
+LOX1_Folkersen_33067605_1	●	""	○	Lectin-like oxidized LDL receptor 1 (LOX1) levels	BMK	21758	0	21758	2020	European
+MIP1A_Folkersen_33067605_1	""	""	●	Macrophage inflammatory protein-1α (CCL3, MIP1a) levels	BMK	21758	0	21758	2020	European
+MIP1B_Folkersen_33067605_1	""	""	●	Macrophage inflammatory protein-1β (CCL4, MIP1b) levels	BMK	21758	0	21758	2020	European
+MMP10_Folkersen_33067605_1	""	""	●	Matrix metalloproteinase-10 (MMP-10, Stromelysin-2) levels	BMK	21758	0	21758	2020	European
+MMP1_Folkersen_33067605_1	""	""	●	Matrix metalloproteinase-1 (MMP-1) levels	BMK	21758	0	21758	2020	European
+MPO_Folkersen_33067605_1	●	""	○	Myeloperoxidase (MPO) levels	BMK	21758	0	21758	2020	European
+MS_IMSGC_31604244_1	""	""	●	Multiple Sclerosis	IMD	68374	47429	115803	2019	European (Multiple countries)
+NAP_SinnottArmstrong_33462484_1	""	""	●	Non-albumin protein levels	BMK	331979	0	331979	2021	Trans-ethnic
+PAPPA_Folkersen_33067605_1	○	●	●	Pappalysin-1 (PAPPA) levels	BMK	21758	0	21758	2020	European
+PAR1_Folkersen_33067605_1	""	""	●	Proteinase-activated receptor 1 levels	BMK	21758	0	21758	2020	European
+PBC_Cordell_26394269_1	""	""	●	Primary Biliary Cholangitis	IMD	10475	2764	13239	2015	European
+PDGFb_Folkersen_33067605_1	""	""	●	Platelet-derived growth factor subunit B (PDGFb) levels	BMK	21758	0	21758	2020	European
+PDGFbb_AholaOlli_27989323_1	""	""	●	Platelet derived growth factor BB (PDGFbb) levels	BMK	8293	0	8293	2017	European (Finnish)
+PECAM1_Folkersen_33067605_1	""	""	●	Platelet endothelial cell adhesion molecule (PECAM-1) levels	BMK	21758	0	21758	2020	European
+PHOS_SinnottArmstrong_33462484_1	""	○	●	Phosphate levels	BMK	331826	0	331826	2021	Trans-ethnic
+PSC_Ji_27992413_1	""	""	●	Primary Sclerosing Cholangitis	IMD	19955	4796	24751	2017	European
+PSGL1_Folkersen_33067605_1	""	""	●	P-selectin glycoprotein ligand 1 (PSGL1) levels	BMK	21758	0	21758	2020	European
+RA_Okada_24390342_1	""	●	""	Rheumatoid Arthritis	IMD	43923	14361	58284	2014	European
+RA_Okada_24390342_3	""	●	""	Rheumatoid Arthritis	IMD	61565	19234	80799	2014	Trans-ethnic (European + Asian)
+RETN_Folkersen_33067605_1	●	""	○	Resistin (RETN) levels	BMK	21758	0	21758	2020	European
+SHBG_SinnottArmstrong_33462484_1	●	●	●	Sex hormone-binding globulin (SHBG) levels	BMK	329122	0	329122	2021	Trans-ethnic
+ST2_Folkersen_33067605_1	""	●	●	ST2 protein (ST2, IL1RL1) levels	BMK	21758	0	21758	2020	European
+T1D_Chiou_34012112_1	●	●	●	Type 1 Diabetes	IMD	501368	18942	520310	2021	European
+T1D_Cooper_doi101101120022_1	●	●	○	Type 1 Diabetes	IMD	8828	5913	14741	2017	European
+T1D_Inshaw_up_1	●	●	●	Type 1 Diabetes	IMD	8828	5913	14741	2020	European
+T2D_Mahajan_30297969_1	""	""	●	Type 2 Diabetes	OTH	824006	74124	898130	2018	European
+TES_SinnottArmstrong_33462484_1	●	""	●	Testosterone levels	BMK	329274	0	329274	2021	Trans-ethnic
+TG_Sakaue_doi1011012020102320213652_1	""	●	""	Triglycerides levels	BMK	111667	0	111667	2021	East Asian (Japanese)
+TG_SinnottArmstrong_33462484_1	●	●	●	Triglycerides levels	BMK	362907	0	362907	2021	Trans-ethnic
+TNFSF14_Folkersen_33067605_1	●	""	●	Tumor necrosis factor superfamily member 14 (TNFSF14, CD258, LIGHT) levels	BMK	21758	0	21758	2020	European
+TPROT_SinnottArmstrong_33462484_1	""	●	●	Total protein levels	BMK	331979	0	331979	2021	Trans-ethnic
+UA_SinnottArmstrong_33462484_1	●	●	●	Uric acids levels	BMK	362754	0	362754	2021	Trans-ethnic
+VEGF_AholaOlli_27989323_1	""	""	●	Vascular endothelial growth factor (VEGF) levels	BMK	7118	0	7118	2017	European (Finnish)
+VITD_Manousaki_28757204_1	●	""	""	Vitamin D levels	BMK	42274	0	42274	2017	European
+VITD_SinnottArmstrong_33462484_1	●	""	""	Vitamin D levels	BMK	346130	0	346130	2021	Trans-ethnic
+VIT_Jin_27723757_1	""	●	""	Vitiligo	IMD	39586	4680	44266	2016	European
+b30600_PanUKBB_PanUKBBR2_1	""	●	""	Albumin levels (UKBB)	BMK	385205	0	385205	2022	Trans-ethnic (CSA,EUR)
+b30610_PanUKBB_PanUKBBR2_1	●	""	●	Alkaline phosphatase levels (UKBB)	BMK	420633	0	420633	2022	Trans-ethnic (CSA,EUR)
+b30620_PanUKBB_PanUKBBR2_1	●	""	●	Alanine aminotransferase levels (UKBB)	BMK	420449	0	420449	2022	Trans-ethnic (AFR,CSA,EUR,MID)
+b30630_PanUKBB_PanUKBBR2_1	""	""	●	Apolipoprotein A levels (UKBB)	BMK	382929	0	382929	2022	Trans-ethnic (CSA,EUR,MID)
+b30640_PanUKBB_PanUKBBR2_1	""	●	●	Apolipoprotein B levels (UKBB)	BMK	418505	0	418505	2022	Trans-ethnic (CSA,EUR,MID)
+b30650_PanUKBB_PanUKBBR2_1	●	""	●	Aspartate aminotransferase levels (UKBB)	BMK	419034	0	419034	2022	Trans-ethnic (CSA,EUR,MID)
+b30660_PanUKBB_PanUKBBR2_1	○	●	●	Direct bilirubin levels (UKBB)	BMK	357198	0	357198	2022	Trans-ethnic (AFR,AMR,CSA,EAS,EUR,MID)
+b30680_PanUKBB_PanUKBBR2_1	""	●	●	Calcium levels (UKBB)	BMK	385066	0	385066	2022	Trans-ethnic (CSA,EUR)
+b30690_PanUKBB_PanUKBBR2_1	""	●	""	Cholesterol levels (UKBB)	BMK	420607	0	420607	2022	Trans-ethnic (CSA,EUR)
+b30700_PanUKBB_PanUKBBR2_1	""	○	●	Creatinine levels (UKBB)	BMK	420401	0	420401	2022	Trans-ethnic (CSA,EUR,MID)
+b30710_PanUKBB_PanUKBBR2_1	●	""	●	C-reactive protein levels (UKBB)	BMK	419693	0	419693	2022	Trans-ethnic (CSA,EUR)
+b30720_PanUKBB_PanUKBBR2_1	●	●	●	Cystatin C levels (UKBB)	BMK	420588	0	420588	2022	Trans-ethnic (CSA,EUR)
+b30730_PanUKBB_PanUKBBR2_1	""	●	●	Gamma glutamyltransferase levels (UKBB)	BMK	420390	0	420390	2022	Trans-ethnic (CSA,EUR,MID)
+b30740_PanUKBB_PanUKBBR2_1	●	""	●	Glucose levels (UKBB)	BMK	384760	0	384760	2022	Trans-ethnic (CSA,EUR)
+b30750_PanUKBB_PanUKBBR2_1	●	""	●	Glycated haemoglobin (HbA1c) levels (UKBB)	BMK	419434	0	419434	2022	Trans-ethnic (CSA,EUR)
+b30760_PanUKBB_PanUKBBR2_1	●	○	●	HDL cholesterol levels (UKBB)	BMK	385023	0	385023	2022	Trans-ethnic (CSA,EUR)
+b30770_PanUKBB_PanUKBBR2_1	●	""	●	Insulin-like growth factor 1 (IGF-1) levels (UKBB)	BMK	418326	0	418326	2022	Trans-ethnic (CSA,EUR)
+b30780_PanUKBB_PanUKBBR2_1	""	●	""	LDL direct (UKBB)	BMK	419831	0	419831	2022	Trans-ethnic (CSA,EUR)
+b30810_PanUKBB_PanUKBBR2_1	""	●	●	Phosphate levels (UKBB)	BMK	384475	0	384475	2022	Trans-ethnic (CSA,EUR)
+b30830_PanUKBB_PanUKBBR2_1	●	●	●	Sex hormone-binding globulin (SHBG) levels (UKBB)	BMK	381526	0	381526	2022	Trans-ethnic (CSA,EUR,MID)
+b30840_PanUKBB_PanUKBBR2_1	●	●	●	Total bilirubin levels (UKBB)	BMK	418830	0	418830	2022	Trans-ethnic (AFR,AMR,CSA,EAS,EUR,MID)
+b30850_PanUKBB_PanUKBBR2_1	●	""	●	Testosterone levels (UKBB)	BMK	381081	0	381081	2022	Trans-ethnic (AFR,AMR,CSA,EAS,EUR,MID)
+b30860_PanUKBB_PanUKBBR2_1	""	●	●	Total protein levels (UKBB)	BMK	384773	0	384773	2022	Trans-ethnic (CSA,EUR,MID)
+b30870_PanUKBB_PanUKBBR2_1	●	●	●	Triglycerides levels (UKBB)	BMK	420271	0	420271	2022	Trans-ethnic (AFR,CSA,EUR)
+b30880_PanUKBB_PanUKBBR2_1	●	●	●	Urate (UKBB)	BMK	420090	0	420090	2022	Trans-ethnic (CSA,EUR,MID)
+b30890_PanUKBB_PanUKBBR2_1	●	""	""	Vitamin D (UKBB)	BMK	401516	0	401516	2022	Trans-ethnic (AFR,CSA,EUR,MID)
+c30510_PanUKBB_PanUKBBR2_1	""	""	●	Creatinine (enzymatic) in urine levels (UKBB)	BMK	428416	0	428416	2022	Trans-ethnic (CSA,EUR)
+ph200.1_PanUKBB_PanUKBBR2_1	""	""	●	Polycythemia vera (UKBB)	CAN	410687	448	411135	2022	European (EUR)
+ph200_PanUKBB_PanUKBBR2_1	""	""	●	Myeloproliferative disease (UKBB)	CAN	414840	1255	416095	2022	European (EUR)
+ph244.4_PanUKBB_PanUKBBR2_1	""	""	●	Hypothyroidism NOS (UKBB)	OTH	416311	18244	434555	2022	Trans-ethnic (AFR,CSA,EAS,EUR)
+ph244_PanUKBB_PanUKBBR2_1	""	●	●	Hypothyroidism (UKBB)	IMD	416311	19131	435442	2022	Trans-ethnic (AFR,CSA,EAS,EUR)
+ph401.1_PanUKBB_PanUKBBR2_1	""	""	●	Essential hypertension (UKBB)	OTH	340580	99705	440285	2022	Trans-ethnic (CSA,EUR)
+ph401_PanUKBB_PanUKBBR2_1	""	""	●	Hypertension (UKBB)	OTH	340580	99977	440557	2022	Trans-ethnic (CSA,EUR)
+ph471_PanUKBB_PanUKBBR2_1	""	●	●	Nasal polyps (UKBB)	IMD	407149	3726	410875	2022	Trans-ethnic (CSA,EUR)
+ph475_PanUKBB_PanUKBBR2_1	""	●	""	Chronic sinusitis (UKBB)	INF	407149	3090	410239	2022	Trans-ethnic (CSA,EUR)
+ph495_PanUKBB_PanUKBBR2_1	●	●	●	Asthma (UKBB)	IMD	398413	33000	431413	2022	Trans-ethnic (CSA,EUR,MID)
+ph496_PanUKBB_PanUKBBR2_1	""	●	○	Chronic airway obstruction (UKBB)	OTH	385655	14422	400077	2022	Trans-ethnic (AFR,EUR)

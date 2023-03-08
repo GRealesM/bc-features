@@ -1,0 +1,50 @@
+# Summary of biomarker assignment to cytobasis
+
+We have two sets of disease clusterings: PC58 based on just PCs 5 and 8, and PCgran based on PCs 5 and 8 plus 2 and 11.  Moving from PC58 to PCgrac, we see that all of cluster 3 gets merged into cluster 1. This is ok - it sits on the same axis and might be considered an extreme version of cluster 1. Perhaps they should never have been separate in the first place.  A bunch (~40%?) of cluster PC58-2 also merges into PCgran-1, which becomes the general IMD cluster.  Another 40% or so becomes PCgran-2 (together with one stray from PC58-1), and the remainder PCgran-3 (a cluster of just 2 - Crohn's and IBD).
+
+```{r echo=FALSE, results='hide'}
+d="~/rds/rds-cew54-basis/03-Bases/cell_basis_v3_varimax"
+d2=file.path(d,"DPMUnc/psm_results")
+f2=file.path(d2,  "UKBB_PC58_IMD_psm_data.rds")
+f3=file.path(d2,  "UKBB_PCgrac_IMD_psm_data.rds")
+
+library(data.table)
+library(magrittr)
+library(ggalluvial)
+pc58=readRDS(f2)
+pc58b=sub("IMD","BMK",f2) %>% readRDS()
+pcgr=readRDS(f3)
+pcgrb=sub("IMD","BMK",f3) %>% readRDS()
+
+## what are the assigned classes for diseases?
+dt1=data.table(Label=names(pc58$calls$cl),cl58=unname(pc58$calls$cl))
+dt2=data.table(Label=names(pcgr$calls$cl),clgr=unname(pcgr$calls$cl))
+dt=merge(dt1,dt2,by="Label",all=TRUE)
+dt[is.na(cl58), cl58:=0]
+dt[is.na(clgr), clgr:=0]
+dtsum=dt[,.(y=.N),by=c("cl58","clgr")]
+theme_set(theme_minimal())
+ggplot(dtsum, aes(y=y, axis1=cl58,axis2=clgr)) + geom_alluvium(aes(fill=factor(cl58))) +
+    geom_stratum(width = 1/5,  fill="grey", color = "white") +
+  geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("PC58", "PCgran"), expand = c(.05, .05)) +
+  scale_fill_brewer(type = "qual", palette = "Set1") +
+  scale_y_continuous("Count") +
+  ggtitle("Relationship between disease clusterings")
+```
+
+To better interpret these clusters we can consider biomarkers.  unfortunately, because of the different scales on which trait values are measured (disease yes/no vs biomarkers standardized to variance 1) and possibly different strength of biological effects, these cannot be simply clustered with the diseases by location, because they tend to fall closer to the origin.  Instead, we consider their direction from the origin, and how that relates to the direction of the average location of each disease cluster.
+
+Starting with PC58, we first merged clusters 1 and 3 because they sit in very similar directions.  Out of the 47 biomarkers that were significantly different from 0 (FDR < 1%) on at least one of PC5 and 8, we found 4 overlapped cluster 1 (containing asthma, RA, vitiligo) and not cluster 2, while 13 overlapped cluster 2 (containing IBD, T1D, MS) and not cluster 1.  Amongst the cluster 4 biomarkers, eosiniphil cationic protein stood out as that most closely aligned with the cluster, and, together with the inclusion of eosiniphil-related diseases such as asthma and EGPA as well as the projected location of eosiniphil count data supported the notion that this direction related to eosinophils. The biomarkers aligned to the other cluster included inflammatory cytokines as well as several biomarkers that are known to be affected by disease status one of the cluster diseases, type 1 diabetes (glucose, HbA1C, cystatin C, bilrubin).  With this smaller set of cytokines, can we narrow on any specific mechanisms?
+
+![Biomarkers in relation to disease clusters on PCs 5 and 8](pc58.png)
+
+
+When looking at PCgran, we notice that cluster 1 (PC58-1 + some PC58-2) sits very close to the origin on PC2/PC11.  Instead PC2, PC11 distinguish two new, smaller clusters.  We use the biomarker data to characterise these, focusing on biomarkers that are significant on at least one of PC2, PC11 and overlap cluster 2 but not cluster 3, or cluster 3 but not cluster 2.  Out of 19 significant biomarkers, seven overlapped cluster 3 only and none overlapped cluster 2 only. It is striking that all six of these seven that have endogenous sources are produced in the liver. Crohn's disease, in this cluster, is a known risk factor for liver disease [https://academic.oup.com/ibdjournal/article/23/6/998/4561120?login=false], but increased risk has also been observed for ulcerative colitis which does not fall in cluster 3 (and doesn't look like it should), so we need to understand that.
+
+![Biomarkers in relation to disease clusters on PCs 2, 5, 8, 11.  Biomarkers aligned by PCs 2 and 11 only.](pcgr.png)
+
+## methods
+
+### Average location of disease clusters
+We used multivariate meta analysis (R package mvmeta) of the locations plus covariance matrices of all diseases in a cluster to find an average location and uncertainty around it.  The 95% confidence region about its location may then be represented by an ellipse, and its direction by the vector from the origin to its center.  We construct 95% confidence intervals about each direction by taking the tangents to the 95% confidence region (an ellipse) from the origin.  We then say a biomarker overlaps a cluster if *its* 95% confidence region overlaps the region created by these tangents.
