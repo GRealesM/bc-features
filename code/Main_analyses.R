@@ -177,6 +177,13 @@ pt.filt <- merge(p.table, qc.filt[,c("First_Author","Trait", "Trait_ID_2.0", "Tr
 
 # Apply 1% FDR correction to overall p for all remaining datasets
 qc.filt[, FDR.overall := p.adjust(overall_p, method = "BH"), by="Trait_class"]
+
+tsig <- copy(qc.filt)
+tsig[, sig.overall:=ifelse(FDR.overall < 0.01, "Y", "N")]
+table(tsig$sig.overall)
+
+# fwrite(tsig, "../tables/Table_S1_QC_filtered_traits.tsv", sep = "\t")
+
 qc.sig <- qc.filt[FDR.overall < 0.01,]
 table(qc.sig$Trait_class)
 
