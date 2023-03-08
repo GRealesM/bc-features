@@ -16,12 +16,14 @@ library(ggrepel)
 library(IMDtools)
 library(cowplot)
 
-load("../basis_building/cell-basis-sparse-3.0.RData")
+load("../data/cell-basis-sparse-3.0.RData")
+
+ptofiles <- "~/rds/rds-cew54-basis/03-Bases/cell_basis_v2/reduced_datasets/" # in HPC only
 
 man <- SNP.manifest
 
 d <- data.table()
-ptofiles <- "../../cell_basis_v2/reduced_datasets/"
+
 
 chenfiles <- grep("Chen_", dir(ptofiles), value = TRUE)
 
@@ -137,4 +139,4 @@ biplot3
 
 togplot <- plot_grid( biplot2, biplot3, nrow = 1, labels = "AUTO")
 
-ggsave( "../Figures/Manuscript/Figure_SXX_Chen_rawdata_biplot.png", togplot, units = "in", height = 7, width = 11, bg="white")
+ggsave( "../figures/Figure_S1_Chen_rawdata_biplot.png", togplot, units = "in", height = 7, width = 11, bg="white")

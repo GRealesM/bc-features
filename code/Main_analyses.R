@@ -223,7 +223,7 @@ seplots <- lapply(unique(snp.qc$SNPID), function(snp){
 
 plot_grid(plotlist=seplots, ncol=2)
 
-# ggsave("../figures/Figure_S1_QCplot1.png", bg="white", width = 7, height = 7)
+# ggsave("../figures/Figure_S2_QCplot1.png", bg="white", width = 7, height = 7)
 
 
 
@@ -382,8 +382,8 @@ pdelta[Var.Delta != 0, ci:=sqrt(Var.Delta) * 1.96][is.na(ci),ci:=0][is.na(Label)
 cp5 <- make.custom.forest.plots(pdelta, feature = 5, palette = tfp, fsize = 9, threshold_basis=0, remove_sum = TRUE, remove_perc = TRUE, remove_side = "none")
 cp8 <- make.custom.forest.plots(pdelta, feature = 8, palette = tfp, fsize = 9,  threshold_basis=0, remove_sum = TRUE, remove_perc = TRUE, remove_side = "none")
 
-ggsave("../figures/Figure_S2_PC5_deltaplot.png", cp5, bg="white", width = 8, height = 8)
-ggsave("../figures/Figure_S3_PC8_deltaplot.png", cp8, bg="white", width = 8, height = 10)
+# ggsave("../figures/Figure_S3_PC5_deltaplot.png", cp5, bg="white", width = 8, height = 8)
+# ggsave("../figures/Figure_S4_PC8_deltaplot.png", cp8, bg="white", width = 8, height = 10)
 
 # Main figure with selected traits
 excl <- "HDL|LDL|Glucose|Testosterone|Alkaline phosphatase|ALT |AST |MMP-10|Creatinine|Apolipoprotein|bilirubin|GGT|Phosphate|Cathepsin|Calcium|Cystatin|eGFR|SHBG|Total protein|Non-albumin|Triglycerides|Mean platelet|Mean corpuscular|Distribution Width|Type 2 Diabetes|High Cholesterol|Hypertension|Hemoglobin concentration|Hematocrit|HbA1c|Cholesterol|Albumin|Red blood cell|Urate|Leukocyte"
@@ -402,7 +402,7 @@ c58r <- plot_grid(cp5r, cp8r, nrow = 1, labels = "AUTO")
 
 cp2 <- make.custom.forest.plots(pdelta, feature = 2 , palette = tfp, threshold_basis=0, remove_sum = TRUE, remove_perc = TRUE, remove_side = "none")
 
-# ggsave("../figures/Figure_S4_PC2_deltaplot.png", cp2, bg="white", width = 8, height = 7.5)
+# ggsave("../figures/Figure_S5_PC2_deltaplot.png", cp2, bg="white", width = 8, height = 7.5)
 
 cp2r <- make.custom.forest.plots(pdr, feature = 2, palette = tfp, fsize = 9, threshold_basis=0, remove_sum = TRUE, remove_perc = TRUE, remove_side = "none")
 
