@@ -29,12 +29,8 @@ library(stringr)
 load("../data/cell-basis-sparse-3.0.RData")
 dictionary <- read.table("../data/Astle_dict.txt", header = T, sep = "\t")
 
-p.table <- fread("../data/Projection_cell_basis_v3_20220804-v1.tsv")
-qc.table <- fread("../data/QC_cell_basis_v3_20220804-v1.tsv")
-metadata <- fread("../data/Metadata_20230307-v1.tsv")
-qc.table <- merge.data.table(qc.table, metadata, all.x = TRUE)
-qc.table[, c("Collection", "Chip", "File_ID"):=NULL]
-
+p.table <- fread("../data/ptable_20230313-v1.tsv")
+qc.table <- fread("../data/qctable_20230313-v1.tsv")
 
 if(is.character(p.table$Var.Delta)){
   p.table$Var.Delta <- as.numeric(p.table$Var.Delta)
@@ -44,10 +40,10 @@ if(is.character(p.table$Var.Delta)){
 snp.qc <- fread("../data/BCB3_SNPfiltered_20220809.tsv")
 
 
-# Before we start filtering, save (supplementary) tables with info about *all* datasets
+# Before we start filtering, save (supplementary) tables with info about all datasets used (excl redundant biobanks)
 
-# fwrite(qc.table, "../tables/Table_Sx_Full_QC.tsv", sep = "\t")
-# fwrite(p.table,  "../tables/Table_Sx_Full_projection.tsv", sep = "\t")
+# fwrite(qc.table, "../tables/Table_S1_QC_table.tsv", sep = "\t")
+# fwrite(p.table,  "../tables/Table_S2_Projection_table.tsv", sep = "\t")
 
 ##################################
 ### Define helper functions    ###
@@ -151,8 +147,8 @@ pbasis[,Label:=Trait_long][, stars:=""][, c("Var.Delta", "z", "P") := NULL]
 # 2. Remove datasets with <80% SNP match
 qc.filt <- qc.table[nSNP >= max(nSNP) * 0.8]
 
-# 3. Remove Astle (since we used them to build the basis), UKBB (Neale) and FinnGen
-qc.filt <- qc.filt[!Reference %in% c("PanUKBBR1", "UKBB", "FinnGenR5", "FinnGenR7") & First_Author != "Astle"]
+# 3. Remove Astle (since we used them to build the basis)
+qc.filt <- qc.filt[First_Author != "Astle"]
 
 # 4. Define an extra class (Blood cells) to distinguish them from the rest of biomarkers
 btraits <- c(dictionary$Trait, "RBC")
@@ -195,7 +191,9 @@ pt.sig <- pt.filt[Trait %in% qc.sig$Trait ]
 # Make labels for projection table
 pt.sig <- make.2labels(pt.sig)
 
-# Save a modified version of qc.filt as Table SXX, which will provide information on the datasets used in the study.
+# Save projection table of significant overall datasets (S5).
+# fwrite(qc.sig, "../tables/Table_S5_significant_qc_table.tsv", sep = "\t")
+# fwrite(pt.sig, "../tables/Table_S6_significant_projection_table.tsv", sep = "\t")
 
 
 # Save our datasets so far
